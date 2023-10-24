@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CheckboxWithImage from "./checkbox";
 import "./listcontainer.css";
+import logo from '../src/img/frontimage.png';
+
 const STORAGE_KEY = "todoList";
 
 export default function ListConatiner() {
@@ -72,7 +74,7 @@ export default function ListConatiner() {
         <div className="startcontainer">
           {tasks.length === 0 ? (
             <div className="imgctn">
-              <img src="http://todo-list-deployment-practical.s3-website.ap-south-1.amazonaws.com/static/media/empty-list.7e43dc4e22c59e2521b3.png"></img>
+              <img src={logo}></img>
               <div class="starttext1">A fresh start</div>
               <div class="starttext2">Anything to add ?</div>
             </div>
