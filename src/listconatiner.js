@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CheckboxWithImage from "./checkbox";
 import "./listcontainer.css";
-import logo from '../src/img/frontimage.png';
+import logo from './img/frontimage.png';
 
 const STORAGE_KEY = "todoList";
 
